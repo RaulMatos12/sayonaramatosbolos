@@ -1,0 +1,78 @@
+/* Cor de fundo principal do site */
+body {
+    background-color: #FADADD; /* Rosa bem claro */
+    color: #333; /* Cor do texto */
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centraliza todo o conteúdo */
+}
+
+/* Cabeçalho com cor vermelha-rosa */
+.header {
+    background-color: #FF5A5F; /* Vermelho meio rosa */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
+/* Rodapé com o marrom de bolo */
+.footer {
+    background-color: #6F4F1F; /* Marrom de bolo */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Container com borda e fundo branco */
+.container {
+    background-color: #FFFFFF; /* Cor branca para o conteúdo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: inline-block; /* Faz o container ficar centralizado */
+    text-align: left; /* Alinha o texto à esquerda dentro do container */
+}
+
+/* Títulos (como Sabores, Preços) */
+h2 {
+    color: #FF5A5F; /* Vermelho meio rosa para os títulos */
+    cursor: pointer;
+}
+
+/* Alterando o estilo da imagem */
+.character {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Lista de itens (como bolos) */
+ul.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo dos itens da lista */
+ul.list li {
+    background-color: #FFF5E1; /* Um tom suave de marrom claro */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #6F4F1F; /* Marrom de bolo para o texto */
+}
+
+/* Botões ou links clicáveis (como "Sabores ▼") */
+.clickable {
+    color: #FF5A5F; /* Vermelho meio rosa para links */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Obs (informações adicionais) */
+.obs {
+    font-style: italic;
+    color: #6F4F1F; /* Marrom de bolo */
+}

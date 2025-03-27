@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos Deliciosos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">Bolos Deliciosos</header>
+    
+    <div class="container">
+    
+        <img src="images/sayo.jpg" alt="Pin-up com torta" class="character">
+
+
+        <h2 onclick="toggleVisibility('sabores')" class="clickable">Sabores ▼</h2>
+        <div id="sabores" class="content hidden">
+            <ul class="list">
+                <li>Bolo comum com musse de limão</li>
+                <li>Bolo comum com doce de leite</li>
+                <li>Bolo comum com cobertura de chocolate branco</li>
+                <li>Bolo comum com cobertura de chocolate ao leite</li>
+                <li>Bolo comum com cobertura de chocolate 70%</li>
+                <li>Bolo de Cenoura com cobertura de chocolate ao leite</li>
+                <li>Bolo de cenoura com cobertura de chocolate branco</li>
+                <li>Bolo de cenoura com cobertura de doce de leite</li>
+                <li>Bolo de cenoura com cobertura de musse de limão</li>
+                <li>Bolo de cenoura com calda de laranja e amêndoas</li>
+                <li>Bolo de cenoura com calda de chocolate</li>
+                <li>Bolo de paçoca com cobertura de chocolate ao leite</li>
+                <li>Bolo de paçoca com cobertura de doce de leite</li>
+                <li>Bolo de chocolate na massa e paçoca com cobertura de chocolate</li>
+                <li>Bolo de paçoca com cobertura de chocolate branco</li>
+                <li>Bolo formigueiro</li>
+                <li>Bolo de laranja com calda de laranja</li>
+                <li>Bolo de laranja calda de laranja ou cobertura de chocolate</li>
+                <li>Bolo de laranja com musse de limão</li>
+                <li>Bolo toalha felpuda (leite de coco)</li>
+                <li>Bolo de coco com musse de limão ou maracujá</li>
+                <li>Bolo de fubá com coco</li>
+                <li>Bolo de fubá com goiabada</li>
+                <li>Bolo de chocolate branco na massa com nozes e cobertura de chocolate branco com coco e nozes por cima</li>
+                <li>Bolo com recheio de doce de leite e laterais com doce de leite</li>
+                <li>Bolo de chocolate recheado com chocolate</li>
+                <li>Bolo de massa de chocolate branco ou escuro, cenoura ou laranja com recheio à escolha</li>
+            </ul>
+            <p class="obs">Obs.: No período de abril a setembro, não trabalho com bolo de laranja, pois ela está muito ácida e o bolo não cresce.</p>
+        </div>
+        
+        <h2 onclick="toggleVisibility('precos')" class="clickable">Preços ▼</h2>
+        <div id="precos" class="content hidden">
+            <ul class="list">
+                <li>Os bolos comuns sem cobertura: R$ 80,00</li>
+                <li>Os bolos com recheio simples (sem raspas de chocolate, amêndoas, nozes, coco ralado): R$ 120,00</li>
+                <li>Com recheio de nozes, amêndoas, coco fresco, ninho, Nutella, abacaxi, ameixa, raspas de chocolate: R$ 140,00</li>
+                <li>Bolos com três camadas: R$ 180,00</li>
+                <li>O bolo pequeno recheado: R$ 90,00</li>
+                <li>Os bolos recheados médios com cobertura simples: R$ 110,00</li>
+                <li>Os bolos recheados médios com coco fresco, raspas de chocolate, nozes e amêndoas: R$ 130,00</li>
+                <li>O vulcão grande: R$ 95,00 e o simples: R$ 90,00</li>
+                <li>O pequeno sai a R$ 70,00, já o vulcão: R$ 75,00</li>
+                <li>O médio: R$ 80,00, já o vulcão: R$ 85,00</li>
+            </ul>
+            <p class="obs">Obs.: Os valores conforme a época podem ter uma pequena alteração, devido aos ingredientes, principalmente o pistache que tem variações de preços.</p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        &copy; 2025 Bolos Deliciosos - Todos os direitos reservados.
+    </footer>
+</body>
+</html>
