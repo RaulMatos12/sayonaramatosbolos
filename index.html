@@ -15,16 +15,19 @@
             }
         }
     </script>
+  
 </head>
 <body>
-    <header class="header">Bolos Deliciosos</header>
+    <header class="header">Sayonaramatosbolos</header>
     
     <div class="container">
     
         <img src="images/sayo.jpg" alt="Pin-up com torta" class="character">
 
-
-        <h2 onclick="toggleVisibility('sabores')" class="clickable">Sabores ▼</h2>
+        <!-- Título com a imagem ao lado -->
+        <h2 onclick="toggleVisibility('sabores')" class="clickable">
+            <img src="images/bolo.png" alt="Imagem de bolo" class="bolo-img"> Sabores ▼
+        </h2>
         <div id="sabores" class="content hidden">
             <ul class="list">
                 <li>Bolo comum com musse de limão</li>
@@ -58,26 +61,34 @@
             <p class="obs">Obs.: No período de abril a setembro, não trabalho com bolo de laranja, pois ela está muito ácida e o bolo não cresce.</p>
         </div>
         
-        <h2 onclick="toggleVisibility('precos')" class="clickable">Preços ▼</h2>
-        <div id="precos" class="content hidden">
-            <ul class="list">
-                <li>Os bolos comuns sem cobertura: R$ 80,00</li>
-                <li>Os bolos com recheio simples (sem raspas de chocolate, amêndoas, nozes, coco ralado): R$ 120,00</li>
-                <li>Com recheio de nozes, amêndoas, coco fresco, ninho, Nutella, abacaxi, ameixa, raspas de chocolate: R$ 140,00</li>
-                <li>Bolos com três camadas: R$ 180,00</li>
-                <li>O bolo pequeno recheado: R$ 90,00</li>
-                <li>Os bolos recheados médios com cobertura simples: R$ 110,00</li>
-                <li>Os bolos recheados médios com coco fresco, raspas de chocolate, nozes e amêndoas: R$ 130,00</li>
-                <li>O vulcão grande: R$ 95,00 e o simples: R$ 90,00</li>
-                <li>O pequeno sai a R$ 70,00, já o vulcão: R$ 75,00</li>
-                <li>O médio: R$ 80,00, já o vulcão: R$ 85,00</li>
-            </ul>
-            <p class="obs">Obs.: Os valores conforme a época podem ter uma pequena alteração, devido aos ingredientes, principalmente o pistache que tem variações de preços.</p>
+        <!-- Alteração para a seção de Comunicações com a imagem "sayo.png" ao lado -->
+        <h2 onclick="toggleVisibility('comunicacoes')" class="clickable">
+            <div class="comunicacao-container">
+                <!-- Imagem "sayo.png" ao lado da comunicação -->
+                <img src="images/sayo.png" alt="Imagem Sayo" class="character">
+                <span>Comunicações ▼</span>
+            </div>
+        </h2>
+        <div id="comunicacoes" class="content hidden">
+            <div class="comunicacoes-content">
+                <!-- Imagem do Instagram -->
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/insta.png" alt="Instagram" class="comunication-img">
+                </a>
+                
+                <!-- Imagem do WhatsApp -->
+                <a href="https://wa.me/1234567890" target="_blank">
+                    <img src="images/whatsapp.png" alt="WhatsApp" class="comunication-img">
+                </a>
+            </div>
+            <p class="obs">Clique nas imagens para entrar em contato conosco via Instagram ou WhatsApp.</p>
         </div>
     </div>
-    
+
     <footer class="footer">
-        &copy; 2025 Bolos Deliciosos - Todos os direitos reservados.
+        <p>Deliciosos bolos artesanais</p>
     </footer>
+    
+    
 </body>
 </html>
