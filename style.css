@@ -185,24 +185,3 @@ hr {
         padding-left: 5px; /* Ajusta o espaço entre o texto e a seta */
     }
 }
-
-/* Modo claro forçado */
-body {
-    background-color: #fff; /* Cor de fundo clara */
-    color: #000; /* Cor do texto escura */
-    font-family: Arial, sans-serif;
-}
-
-/* Anula o modo escuro do dispositivo */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #fff; /* Cor de fundo clara */
-        color: #000; /* Cor do texto escura */
-    }
-
-    /* Se precisar, force outras partes do seu layout */
-    .header, .footer {
-        background-color: #fff;
-        color: #000;
-    }
-}
