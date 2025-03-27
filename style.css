@@ -15,24 +15,25 @@ body {
     font-size: 2em;
 }
 
-/* Rodapé com o marrom de bolo */
 .footer {
-    background-color: #6F4F1F; /* Marrom de bolo */
-    color: white;
+    background-color: #6F4F1F; /* Marrom */
+    color: #D2B48C; /* Marrom claro */
     text-align: center;
-    padding: 10px;
-    font-size: 1em;
+    padding: 8px; /* Menos altura */
+    font-size: 0.9em; /* Um pouco menor */
+    font-weight: bold;
+    width: 100%;
+    margin-top: auto;
 }
 
-/* Container com borda e fundo branco */
 .container {
-    background-color: #FFFFFF; /* Cor branca para o conteúdo */
-    padding: 20px;
+    width: 60%; /* Reduz ainda mais a largura */
+    max-width: 600px; /* Limita o tamanho máximo */
+    background-color: #FFFFFF;
+    padding: 15px; /* Menos preenchimento interno */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    display: inline-block; /* Faz o container ficar centralizado */
-    text-align: left; /* Alinha o texto à esquerda dentro do container */
+    margin: 20px auto; /* Centraliza na tela */
 }
 
 /* Títulos (como Sabores, Preços) */
@@ -75,4 +76,68 @@ ul.list li {
 .obs {
     font-style: italic;
     color: #6F4F1F; /* Marrom de bolo */
+}
+
+.hidden {
+    display: none;
+}
+
+.bolo-img {
+    width: 30px;  /* Ajuste o tamanho da imagem conforme necessário */
+    margin-right: 10px;  /* Adiciona um espaço entre a imagem e o texto */
+    vertical-align: middle;  /* Alinha verticalmente com o texto */
+}
+
+/* Estilo para as imagens do Instagram e WhatsApp */
+.comunication-img {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    margin: 10px;
+}
+
+/* Estilo para a imagem "sayo.png" ao lado da seção de Comunicações */
+.comunicacao-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.comunicacao-container img.character {
+    margin-right: 10px;
+    width: 20px; /* Reduziu o tamanho da imagem para 20px */
+    height: auto;
+}
+
+.comunicacoes-content {
+    margin-left: 10px;
+}
+
+/* Impede que a palavra "Comunicações" se mova */
+.clickable {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clickable span {
+    display: inline-block;
+    padding-left: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.content {
+    margin-top: 10px;
+}
+
+/* Estilo para o conteúdo escondido */
+.hidden {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
